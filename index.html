@@ -123,7 +123,7 @@
             background: linear-gradient(135deg, #C599B6 0%, #A46A93 100%);
             color: white;
             text-align: center;
-            padding-top: 80px;
+            padding-top: 150px;
             position: relative;
             overflow: hidden;
         }
@@ -140,6 +140,12 @@
                 opacity: 0.3;
             }
 
+        .hero-content {
+            max-width: 900px;
+            padding: 0 20px;
+
+        }
+
         .hero-content h1 {
             font-size: 3.5rem;
             margin-bottom: 20px;
@@ -152,9 +158,6 @@
         .hero-content p {
             font-size: 1.2rem;
             margin-bottom: 30px;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
             line-height: 1.8;
             opacity: 0;
             transform: translateY(20px);
@@ -165,6 +168,36 @@
             opacity: 0;
             transform: translateY(20px);
             animation: fadeInUp 1s forwards 1.1s;
+        }
+
+        .hero-social {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards 1.4s;
+        }
+
+        .hero-social a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .hero-social a:hover {
+            background: white;
+            color: #C599B6;
+            transform: translateY(-5px);
         }
 
         .btn {
@@ -753,6 +786,16 @@
                 color: #C599B6;
             }
 
+        @media (max-width: 992px) {
+            .hero-content h1 {
+                font-size: 2.8rem;
+            }
+            
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+        }
+
         @media (max-width:768px) {
             .about-content {
                 flex-direction: column;
@@ -764,11 +807,11 @@
             }
 
             .hero-content h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
 
             .hero-content p {
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
 
             .nav-links {
@@ -778,6 +821,37 @@
             .scroll-top {
                 bottom: 20px;
                 right: 20px;
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+
+            .hero {
+                padding-top: 100px;
+                height: auto;
+                min-height: 100vh;
+            }
+            
+            .hero-content {
+                padding: 40px 0;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-content h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero-content p {
+                font-size: 0.95rem;
+            }
+            
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+            
+            .hero-social a {
                 width: 40px;
                 height: 40px;
                 font-size: 1.2rem;
@@ -816,6 +890,14 @@
                     </a>
 
                     <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/EsraaSamir12" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/esraa-samir" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -1038,6 +1120,7 @@
                         <p><i class="fas fa-envelope"></i> esraasamir118881@gmail.com</p>
                         <p><i class="fas fa-phone"></i> 01064660478</p>
                         <p><i class="fas fa-map-marker-alt"></i> Cairo, Egypt</p>
+
                     </div>
                 </div>
 
@@ -1066,10 +1149,22 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/EsraaSamir12" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/esraa-samir-7b83152b0/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.upwork.com/freelancers/~0188e261c94a1cfc09" target="_blank">
+                    <!-- أيقونة Upwork -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512" fill="#6fda44">
+                        <path d="M256 0C114.8 0 0 114.8 0 256s114.8 256 256 256 256-114.8 256-256S397.2 0 256 0zm107.5 165.6c39.1 0 71.1 32 71.1 71.1s-32 71.1-71.1 71.1c-22.9 0-43.4-11.1-56-28.2-5.2 22.3-13.5 44-24.7 65.2h-41.7v-89.4c-8.2 2.9-17 4.5-26.1 4.5-39.1 0-71.1-32-71.1-71.1s32-71.1 71.1-71.1 71.1 32 71.1 71.1v10.6c0 9.5-1.8 18.6-5 27.1 6.3 11.6 18.4 19.4 32.4 19.4 20.1 0 36.4-16.3 36.4-36.4s-16.3-36.4-36.4-36.4c-8.1 0-15.6 2.7-21.5 7.2-5.6-6.8-11.7-13-18.2-18.5 13-18.9 34.3-31 58.2-31z" />
+                    </svg>
+                </a>
+
+                <a href="https://khamsat.com/user/esraa_samir_12" target="_blank">
+                    <!-- أيقونة خمسات (استخدمت شكل نجمة كمثال) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fbbc05">
+                        <path d="M12 .587l3.668 7.431L24 9.748l-6 5.843L19.335 24 12 19.897 4.665 24 6 15.591 0 9.748l8.332-1.73z" />
+                    </svg>
+                </a>
+
             </div>
             <p>© 2025 All Rights Reserved | Esraa Samir</p>
         </div>
